@@ -86,3 +86,7 @@ table th, td {
 table th {
     border-bottom: 2px double black;
 }
+
+section .add_product {
+    margin-top: 20px;
+}
