@@ -102,3 +102,4 @@ PHP - MYSQL - Joel Murach - 2020/06/12 -> 434 -> The object-oriented Product Man
 	file: SHOW DATABASE, INSERT INTO, UPDATE, DELETE
 PHP - MYSQL - Joel Murach - 2020/06/13 -> 434 -> The object-oriented Product Manager application
 PHP - MYSQL - Joel Murach - 2020/06/14 -> 444 -> Additional skills for working with objects
+PHP - MYSQL - Joel Murach - 2020/06/15 -> 450 -> How to work with inheritance

@@ -1,8 +1,9 @@
 <?php
-    
-    // require_once('category_db.php');
-    // require_once('product.php');
-    // require_once('category.php');
+
+    // public static function getProductByCategory($category_id);
+    // public static function getProduct($product_id);
+    // public static function deleteProduct($product_id);
+    // public static function addProduct($product);
 
     class ProductDB {
         

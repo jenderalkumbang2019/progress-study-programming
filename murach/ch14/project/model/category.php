@@ -1,4 +1,11 @@
 <?php
+
+    // public function __construct($id=null, $name=null);
+    // public function getID();
+    // public function setID($value);
+    // public function getName();
+    // public function setName($value);
+
     class Category {
         private $id, $name;
         

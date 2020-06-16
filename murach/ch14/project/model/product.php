@@ -1,5 +1,24 @@
 <?php
 
+// public function __construct($category, $code, $name, $price);
+// public function getCategory();
+// public function setCategory($value);
+// public function getID();
+// public function setID($value);
+// public function getCode();                 
+// public function setCode($value);    
+// public function getName();
+// public function setName($value);
+// public function getPrice();
+// public function getPriceFormatted();
+// public function setPrice($value);
+// public function getDiscountPercent();
+// public function getDiscountAmount();
+// public function getDiscountPrice();
+// public function getImageFilename();
+// public function getImagePath();
+// public function getImageAltText();
+
     class Product {
         
         private $category, $id, $code, $name, $price;

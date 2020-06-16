@@ -1,7 +1,7 @@
 <?php
 
-    // require_once('database.php');
-    // require_once('category.php');
+    // public static function getCategory($category_id);
+    // public static function getCategories();
 
     class CategoryDB {
         public static function getCategory($category_id) {

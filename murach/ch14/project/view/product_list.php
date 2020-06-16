@@ -1,4 +1,4 @@
-<?php require_once('header.php'); ?>
+<?php require('header.php'); ?>
 
 <main>
     <h3>Product List</h3>
@@ -44,7 +44,7 @@
 
         </table>
 
-        <p class="add_product"><a href="#">Add Product</a></p>
+        <p class="add_product"><a href=".?action=show_add_form">Add Product</a></p>
 
     </section>
 
@@ -52,4 +52,4 @@
 
 </main>
 
-<?php require_once('footer.php'); ?>
+<?php require('footer.php'); ?>
