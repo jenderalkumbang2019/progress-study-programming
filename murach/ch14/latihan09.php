@@ -1,4 +1,7 @@
 <?php
+    
+    // checked compere suatu class
+
     class Employee {
         public $firstName, $lastName;
         private $ssn, $dob;
@@ -26,25 +29,34 @@
 
         public function showAll() {
             echo "<ul>";
-            foreach($this as $key => $value) {
-                echo "<li>$key = $value";
+            foreach($this as $key=>$value) {
+                echo "<li>$key = $value</li>";
             }
             echo "</ul>";
         }
+
     }
 
-    $employee = new Employee('Jerry', 'Rinoldy');
+    $employee = new Employee('John', 'Doe');
     $employee->setSSN('999-14-3456');
     $employee->setDOB('3-15-1970');
-
-    $employee->showAll();
-
-    echo "<br>";
-    echo "<br>";
-    echo "<br>";
-
-    echo '<ul>';
-    foreach($employee as $key=>$value) {
-        echo "<li>$key = $value</li>";
+    
+    if(class_exists('Employee')) {
+        echo 'class exists ... <br>';
     }
-    echo '</ul>';
+
+    echo get_class($employee) . "<br>";
+
+    if(is_a($employee, 'Employee')) {
+        echo "\$employee adalah objek dari class Employee ... <br>";
+    }
+
+    if(property_exists($employee, 'firstName')) {
+        echo "firstName adalah property dari objek \$employee <br>";
+    }
+
+    if(method_exists($employee, 'showAll')) {
+        echo "showAll() adalah method dari objek \$employee <br>";
+    }
+
+    

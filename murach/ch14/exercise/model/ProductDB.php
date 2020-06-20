@@ -7,7 +7,7 @@
 
     class ProductDB {
         
-        public static function getProductByCategory($category_id) {
+        public function getProductByCategory($category_id) {
             $db = Database::getDB();
             
             $category = CategoryDB::getCategory($category_id);
@@ -21,19 +21,19 @@
 
             $products = array();
             foreach($rows as $row) {
-                $product = new Product(
-                                        $category,
-                                        $row['productCode'], 
-                                        $row['productName'], 
-                                        $row['listPrice']
-                );
+                $product = new Product();
+                $product->setCategory($category);
+                $product->setCode($row['productCode']);
+                $product->setName($row['productName']);
+                $product->setPrice($row['listPrice']);
                 $product->setID($row['productID']);
+
                 $products[] = $product;
             }
             return $products;
         }
 
-        public static function getProduct($product_id) {
+        public function getProduct($product_id) {
             $db = Database::getDB();
 
             $query = "SELECT * FROM products WHERE productID = :product_id";
@@ -44,15 +44,18 @@
             $statement->closeCursor();
 
             $category = CategoryDB::getCategory($row['categoryID']);
-            $product = new Product($category,
-                                    $row['productCode'], 
-                                    $row['productName'], 
-                                    $row['listPrice']);
+
+            $product = new Product();
+            $product->setCategory($category);
+            $product->setCode($row['productCode']);
+            $product->setName($row['productName']);
+            $product->setPrice($row['listPrice']);
             $product->setID($row['productID']);
+
             return $product;
         }
 
-        public static function deleteProduct($product_id) {
+        public function deleteProduct($product_id) {
             $db = Database::getDB();
             $query = "DELETE FROM products WHERE productID = :product_id";
             $statement = $db->prepare($query);
@@ -61,7 +64,7 @@
             $statement->closeCursor();
         }
 
-        public static function addProduct($product) {
+        public function addProduct($product) {
             $db = Database::getDB();
             $category_id = $product->getCategory()->getID();
             $code = $product->getCode();
@@ -82,19 +85,3 @@
         }
 
     }
-
-    // $category = new Category(4, 'Komputer');
-
-    // $product = new Product($category, 'LAC40', 'Laptop Acer 40', 620);
-
-    // ProductDB::addProduct($product);
-    
-    // $products = ProductDB::getProductByCategory(4);
-    // foreach($products as $product) {
-    //     echo $product->getID() . " - " . 
-    //         $product->getCode() . " - " . 
-    //         $product->getName() . " - " . 
-    //         $product->getPrice() . 
-    //         "<br>";
-    // };
-

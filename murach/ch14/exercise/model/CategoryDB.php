@@ -7,7 +7,7 @@
     // require_once('category.php');
 
     class CategoryDB {
-        public static function getCategory($category_id) {
+        public function getCategory($category_id) {
             $db = Database::getDB();
             $query = "SELECT * FROM categories WHERE categoryID = :category_id";
             $statement = $db->prepare($query);
@@ -16,11 +16,15 @@
             $row = $statement->fetch();
             $statement->closeCursor();
             
-            $category = new Category($row['categoryID'], $row['categoryName']);
+            // $category = new Category($row['categoryID'], $row['categoryName']);
+            $category = new Category();
+            $category->setID($row['categoryID']);
+            $category->setName($row['categoryName']);
+
             return $category;
         }
 
-        public static function getCategories() {
+        public function getCategories() {
             $db = Database::getDB();
             $query = "SELECT * FROM categories";
             $statement = $db->prepare($query);
@@ -30,14 +34,16 @@
             
             $categories = array();
             foreach($rows as $row) {
-                $category = new Category($row['categoryID'], $row['categoryName']);
+                $category = new Category();
+                $category->setID($row['categoryID']);
+                $category->setName($row['categoryName']);
                 $categories[] = $category;
             }
             
             return $categories;
         }
 
-        public static function deleteCategory($category_id) {
+        public function deleteCategory($category_id) {
             $db = Database::getDB();
 
             $query = "DELETE FROM categories WHERE categoryID = :category_id";
@@ -47,7 +53,7 @@
             $statement->closeCursor();
         }
 
-        public static function addCategory($category_name) {
+        public function addCategory($category_name) {
             $db = Database::getDB();
 
             $query = "INSERT INTO categories (categoryName) VALUE (:category_name)";
@@ -56,23 +62,6 @@
             $statement->execute();
             $statement->closeCursor();
         }
-
-        
         
     }
-
-    // $categories = CategoryDB::getCategories();
-    // var_dump($categories);
-
-    // $category = CategoryDB::getCategory(1);
-    // var_dump($category);
-
-    // CategoryDB::deleteCategory(5);
-    // // $category = CategoryDB::getCategory(5);
-    // // echo $category->getName();
-
-    // CategoryDB::addCategory('Drums');
-
-    // $categories = CategoryDB::getCategories();
-    // var_dump($categories);
 

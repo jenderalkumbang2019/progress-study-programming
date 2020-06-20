@@ -1,4 +1,7 @@
 <?php
+    
+    // menampilkan property suatu class
+
     class Employee {
         public $firstName, $lastName;
         private $ssn, $dob;
@@ -26,25 +29,21 @@
 
         public function showAll() {
             echo "<ul>";
-            foreach($this as $key => $value) {
-                echo "<li>$key = $value";
+            foreach($this as $key=>$value) {
+                echo "<li>$key = $value</li>";
             }
             echo "</ul>";
         }
+
     }
 
-    $employee = new Employee('Jerry', 'Rinoldy');
+    $employee = new Employee('John', 'Doe');
     $employee->setSSN('999-14-3456');
     $employee->setDOB('3-15-1970');
-
     $employee->showAll();
 
-    echo "<br>";
-    echo "<br>";
-    echo "<br>";
-
-    echo '<ul>';
-    foreach($employee as $key=>$value) {
+    echo "<ul>";
+    foreach($employee as $key => $value) {
         echo "<li>$key = $value</li>";
     }
-    echo '</ul>';
+    echo "</ul>";

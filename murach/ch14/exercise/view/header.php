@@ -2,8 +2,7 @@
 <html>
     <head>
         <title>My Guitar Shop</title>
-        <!-- <link rel="stylesheet" type="text/css" href="../main9.css"> -->
-        <link rel="stylesheet" type="text/css" href="/murach/ch14/project/main10.css">
+        <link rel="stylesheet" type="text/css" href="/murach/ch14/exercise/main11.css">
     </head>
     
     <body>
