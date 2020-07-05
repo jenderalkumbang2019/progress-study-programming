@@ -1,0 +1,75 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+html {
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: beige;
+}
+
+body {
+    width: 65%;
+    background-color: rgb(223, 210, 194);
+    margin: 20px auto;
+    padding: 50px;
+    box-sizing: border-box;
+}
+
+header {
+    padding-bottom: 15px;
+    border-bottom: 3px solid black;
+}
+
+main {
+    margin: 10px;
+}
+
+footer {
+    padding-top: 15px;
+    border-top: 3px solid black;
+    text-align: right;
+}
+
+.user_information {
+    margin-top: 20px;
+}
+
+.user_information label {
+    padding-left: 2%;
+    padding-top: 2%;
+    width: 25%;
+    float: left;
+    text-align: right;
+}
+
+.user_information input {
+    margin-left: 1%;
+    margin-top: 2%;
+    height: 20px;
+    width: 25%;
+}
+
+.user_information span {
+    padding-top: 2%;
+}
+
+br {
+    clear: both;
+}
+
+.submit_registration {
+    margin-bottom: 20px;
+}
+
+.submit_registration input[type=submit] {
+    font-size: 15px;
+    width: 20%;
+    padding: 2px;
+    margin: 15px;
+}
+
+.submit_registration .btn_register[type=submit] {
+    margin-left: 25%;
+}
+

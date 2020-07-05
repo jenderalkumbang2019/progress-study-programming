@@ -108,7 +108,25 @@ PHP - MYSQL - Joel Murach - 2020/06/17 -> 450 -> How to work with inheritance
 PHP - MYSQL - Joel Murach - 2020/06/18 -> 450 -> How to work with inheritance
 PHP - MYSQL - Joel Murach - 2020/06/19 -> 450 -> How to work with inheritance
 PHP - MYSQL - Joel Murach - 2020/06/20 -> 463 -> 15. How to use regular expression, handle expression, and ...
+
 PHP - MYSQL - Joel Murach - 2020/06/21 -> 464 -> How to use regular expressions
 PHP - MYSQL - Joel Murach - 2020/06/22 -> 464 -> How to use regular expressions
 PHP - MYSQL - Joel Murach - 2020/06/23 -> 472 -> How to use look-ahead assertions
-PHP - MYSQL - Joel Murach - 2020/06/23 -> 478 -> Regular expression for data validation
+PHP - MYSQL - Joel Murach - 2020/06/24 -> 478 -> Regular expression for data validation
+PHP - MYSQL - Joel Murach - 2020/06/25 -> 478 -> Regular expression for data validation
+PHP - MYSQL - Joel Murach - 2020/06/26 -> 478 -> Regular expression for data validation
+PHP - MYSQL - Joel Murach - 2020/06/27 -> 478 -> Regular expression for data validation
+PHP - MYSQL - Joel Murach - 2020/06/28 -> 478 -> Regular expression for data validation
+PHP - MYSQL - Joel Murach - 2020/06/29 -> 478 -> Regular expression for data validation
+PHP - MYSQL - Joel Murach - 2020/06/30 -> 478 -> Regular expression for data validation
+PHP - MYSQL - Joel Murach - 2020/07/01 -> 494 -> The controller
+
+	1. htaccess
+	2. mvc->my-books, unpas
+	3. build framework by myself->my-book
+	4. PHP-MYSQL-Joel Murach, Database
+
+PHP - MYSQL - Joel Murach - 2020/07/02 -> 494 -> The controller (0)
+PHP - MYSQL - Joel Murach - 2020/07/03 -> 494 -> The controller (0)
+PHP - MYSQL - Joel Murach - 2020/07/04 -> 494 -> The controller (0)
+PHP - MYSQL - Joel Murach - 2020/07/05 -> 501 -> Modify the code 4

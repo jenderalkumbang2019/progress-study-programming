@@ -1,0 +1,35 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+html {
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: beige;
+}
+
+body {
+    width: 65%;
+    background-color: burlywood;
+    /* background-color: cadetblue; */
+    margin: 20px auto;
+    padding: 50px;
+    box-sizing: border-box;
+}
+
+header {
+    padding-bottom: 15px;
+    border-bottom: 3px solid black;
+}
+
+main {
+    
+}
+
+footer {
+    padding-top: 15px;
+    border-top: 3px solid black;
+    text-align: right;
+}
+
+
