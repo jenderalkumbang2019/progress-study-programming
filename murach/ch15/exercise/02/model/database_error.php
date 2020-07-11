@@ -1,0 +1,20 @@
+<?php
+	
+?>
+
+<!DOCTYPE html>
+<html>
+	
+	<head>
+		<title>My Guitar Shop</title>
+		<link rel="stylesheet" type="text/css" href="main12.css">
+	</head>
+	
+	<body>
+		<h1>Database Error</h1>
+		<p>There was an error connecting to the database.</p>
+		<p>The database must be installed as described in appendix A.</p>
+		<p>There database must be running as described in chapter 1.</p>
+		<p>Error messege: <?php echo $error_message; ?></p>
+	</body>
+</html>

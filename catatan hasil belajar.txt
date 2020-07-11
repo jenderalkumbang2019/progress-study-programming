@@ -129,4 +129,12 @@ PHP - MYSQL - Joel Murach - 2020/07/01 -> 494 -> The controller
 PHP - MYSQL - Joel Murach - 2020/07/02 -> 494 -> The controller (0)
 PHP - MYSQL - Joel Murach - 2020/07/03 -> 494 -> The controller (0)
 PHP - MYSQL - Joel Murach - 2020/07/04 -> 494 -> The controller (0)
-PHP - MYSQL - Joel Murach - 2020/07/05 -> 501 -> Modify the code 4
+PHP - MYSQL - Joel Murach - 2020/07/05 -> 501 -> Modify the code 4 E15-1
+PHP - MYSQL - Joel Murach - 2020/07/06 -> 501 -> Modify the code 6 E15-1
+PHP - MYSQL - Joel Murach - 2020/07/07 -> 501 -> Modify the code 8 E15-1
+PHP - MYSQL - Joel Murach - 2020/07/07 -> 502 -> Modify the code 4 E15-2
+PHP - MYSQL - Joel Murach - 2020/07/07 -> 502 -> Modify the code 4 E15-2
+PHP - MYSQL - Joel Murach - 2020/07/07 -> 502 -> Modify the code 4 E15-2
+PHP - MYSQL - Joel Murach - 2020/07/07 -> 502 -> Modify the code 4 E15-2
+
+PHP - MYSQL - Joel Murach - 2020/07/07 -> 503 -> Section 3 Master MySQL programming
